@@ -1,0 +1,101 @@
+header {    
+    display: block;
+    max-height: 50px;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #ffffff;
+    z-index: 2;
+}
+
+
+header h2 {
+    font-size: 28px;
+}
+header h2.eng {
+    font-family: "Tourney", sans-serif;
+    margin-left: 10px;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+header h2.doc {
+    font-family: "Staatliches", sans-serif;
+    margin-left: 130px;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+header img {
+    position: absolute;
+    right: 80px;
+    top: 10px;
+    width: auto;
+}
+
+aside {
+    position: fixed;
+    top: 50px;
+    left: 0;
+    width: 400px;
+    height: calc(100% - 50px);
+    background-color: #ffffff;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+aside nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+aside nav ul li {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 40px;
+}
+
+aside nav ul li a {
+    list-style-type: none;
+    padding: 0;
+    text-decoration: none;
+    color: #000000;
+    font-size: 36px;
+    border-top: 1px solid #000000;
+    display: block;
+    padding-top: 10px;
+}
+
+main {
+    margin-left: 400px;
+    margin-top: 50px;
+    padding: 20px;
+    position: relative;
+}
+
+main h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+main p {
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+main::before {
+    content: '';
+    position: fixed;
+    top: 50px;
+    right: 50px;
+    width: 400px;
+    height: 400px;
+    background-image: url('bg.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -1;
+}
